@@ -1,0 +1,106 @@
+/* -------------------------------------
+    MEDIA QUERIES
+   ------------------------------------- */
+
+/* MOBILE
+===========================================================================*/
+@media (max-width: 375px) {
+
+/* HOME PAGE */
+  .toc {
+    width: 293px;
+    margin: auto;
+    font-size: 0.8em;
+  }
+  header, footer {
+    font-size: 0.8em;
+  }
+  #name {
+    font-size: 2.3em;
+  }
+  .dottedline {
+    margin: 0.85em 0.3em 0em 0.3em;
+    border-bottom: 3.5px dotted;
+  }
+
+/* ABOUT PAGE */
+  .title-page {
+    font-size: 1.5em;
+  }
+
+/* PROJECT PAGE */
+  .main-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .banner {
+    width: 100%;
+    margin: 2.4em auto auto auto;
+  }
+  .content {
+    width: 90%;
+  }
+  .col2 {
+    width: 100%;
+  }
+  .credits {
+    margin-bottom: 50px;
+  }
+  p {
+    margin: 0;
+  }
+
+
+}
+
+/* TABLET
+===========================================================================*/
+@media (min-width: 376px) and (max-width: 768px) {
+
+/* HOME PAGE */
+  .toc {
+    width: 326px;
+    margin: auto;
+    font-size: 0.8em;
+  }
+  header, footer {
+    font-size: 0.8em;
+  }
+  #name {
+    font-size: 2.6em;
+  }
+  .dottedline {
+    margin: 0.85em 0.3em 0em 0.3em;
+    border-bottom: 3.5px dotted;
+  }
+
+/* ABOUT PAGE */
+  .title-page {
+    font-size: 1.5em;
+  }
+
+/* PROJECT PAGE */
+  .main-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .banner {
+    width: 100%;
+    margin: 2.4em auto auto auto;
+  }
+  .col2 {
+    width: 100%;
+  }
+  .credits {
+    margin-bottom: 50px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+/* DESKTOP
+===========================================================================*/
+@media (min-width: 769px) and (max-width: 1288px) {
+
+}

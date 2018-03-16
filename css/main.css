@@ -44,14 +44,29 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+	font-family: 'Venus', Verdana, sans-serif;
+  font-weight: bold;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	background-color: #DA4121;
+	color: white;
+	width: fit-content;
+}
+
 p {
   font-family: 'Venus', Verdana, sans-serif;
   font-weight: normal;
   font-size: 0.8em;
+	line-height: 1.7;
 }
 
 .title-page {
   font-size: 2em;
+}
+
+.title-content {
+	margin-bottom: 0;
 }
 
 .bold {
@@ -60,6 +75,14 @@ p {
 
 .center {
   text-align: center;
+}
+
+.margin-auto {
+	margin: auto;
+}
+
+.metadata {
+	font-size: 0.8em;
 }
 
 /* COMPONENTS
@@ -73,7 +96,9 @@ p {
   width: 100%;
 	top: 0;
   left: 0;
-  padding-left: 1em;
+	padding-left: 5%;
+	padding-top: 1em;
+	padding-bottom: 1em;
   background-color: rgba(255, 255, 255, 0.9);
 	z-index: 3;
 }
@@ -82,30 +107,10 @@ p {
   cursor: pointer;
 }
 
-.styleguide-nav {
-  position: fixed;
-	top: 0;
-  left: 0;
-  padding-left: 1em;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.9);
-	z-index: 3;
-}
-
-.styleguide-nav a:hover, nav a:focus {
-  cursor: pointer;
-}
-
-.container-styleguide {
-  width: 65%;
-  margin-left: 16em;
-  padding-top: 20px;
-}
-
 .content {
-  width: 70%;
+  width: 75%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 /* HOME PAGE
@@ -161,13 +166,9 @@ footer {
 /* STYLEGUIDE
   ===========================================================================*/
 
-.container-styleguide section {
+section {
   padding-top: 10px;
   padding-bottom: 80px;
-}
-
-.container-styleguide section h3 {
-  padding-top: 1em;
 }
 
 #colours{
@@ -224,40 +225,74 @@ footer {
 	max-height: 530px;
 }
 
+.project-img {
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	max-width: 100%;
+	padding: 15px 0;
+}
+
+.gif {
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+	width: 75%;
+	margin: 0 12.3%;
+}
+
+/* This div is to place any images or videos as a banner for a project page */
 .banner {
-	position: relative;
 	text-align: center;
 	z-index: 1;
-	margin-top: 0;
+	width: 91%;
+	margin: 5em auto auto auto;
+}
+
+/* This code adjusts the size of the video, without distorting the aspect ratio */
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 41.5%;
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .credits {
-  font-size: 0.8em;
-}
-.container {
-  display: flex;
+	display: flex;
   flex-wrap: wrap;
   flex: 0 1 100%;
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 100px;
+	font-size: 0.8em;
 }
 
 .col1 {
-  width: 70%;
+  width: 100%;
   margin: auto;
-}
-
-.col2-test {
-  width: 47%;
+	padding: 15px 0;
 }
 
 .col2 {
+  width: 48%;
+}
+
+.page-content {
   display: flex;
   flex-wrap: wrap;
   flex: 0 1 65%;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding: 15px 0;
 }
 
 .col2-item {
@@ -272,16 +307,30 @@ footer {
   text-align: right;
 }
 
-iframe {
-  padding: 45px 0 45px 0;
-  justify-content: center;
-  width: 100%;
-}
-
 .invision {
   transform: scale(0.75);
 }
 
-.video {
-  width: 100%;
+/* ABOUT PAGE
+  ===========================================================================*/
+
+.container {
+	text-align: left;
+	z-index: 1;
+	width: 91%;
+	margin: 5em auto auto auto;
+}
+
+.portrait-img {
+	overflow: hidden;
+	object-fit: cover;
+	object-position: left;
+	max-height: 610px;
+	padding: 15px 0;
+	z-index: -1;
+}
+
+.link {
+	text-decoration: underline;
+	cursor: pointer;
 }
