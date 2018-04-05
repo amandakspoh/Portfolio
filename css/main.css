@@ -334,3 +334,21 @@ section {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+.photos {
+	position: fixed;
+	z-index: -999;
+}
+
+/* #portrait:hover {
+	display: block;
+} */
+
+#claudy_photo:hover{
+	display: block;
+}
+
+#portrait {
+	position: absolute;
+	z-index: -1;
+}
