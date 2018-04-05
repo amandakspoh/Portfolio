@@ -315,19 +315,90 @@ section {
   ===========================================================================*/
 
 .container {
-	text-align: left;
-	z-index: 1;
-	width: 91%;
-	margin: 5em auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 91%;
+  justify-content: space-between;
+  padding-top: 60px;
+  text-align: left;
+  margin: 0 auto;
 }
 
-.portrait-img {
+.col2-imgs {
+  width: 48%;
+}
+
+.hidden {
+	display: none;
+}
+
+#portrait-img, #oneasics-img, #inamoto-img, #hootsuite-img, #akqa-img {
 	overflow: hidden;
-	object-fit: cover;
+	object-fit: scale-down;
 	object-position: left;
+}
+
+#portrait {
+	position: absolute;
+	z-index: -1;
+	padding-top: 17px;
+  margin-left: 2em;
+}
+
+#portrait-img {
+	max-width: 100%;
 	max-height: 610px;
 	padding: 15px 0;
-	z-index: -1;
+}
+
+#oneasics {
+	position: absolute;
+	z-index: 1;
+	margin-top: 8em;
+	margin-left: 18em;
+}
+
+#oneasics-img {
+	max-width: 100%;
+	max-height: 610px;
+	padding: 15px 0;
+}
+
+#inamoto {
+	position: absolute;
+	z-index: 2;
+	margin-top: 3.3em;
+	margin-left: -2.5em;
+}
+
+#inamoto-img {
+	max-width: 39%;
+	max-height: 610px;
+	padding: 15px 0;
+}
+
+#hootsuite {
+	position: absolute;
+	z-index: 3;
+	margin-top: 12.5em;
+  margin-left: -1.5em;
+}
+
+#hootsuite-img {
+	width: 100%;
+	padding: 15px 0;
+}
+
+#akqa {
+	position: absolute;
+	z-index: 4;
+	margin-top: 19em;
+}
+
+#akqa-img {
+	max-width: 34%;
+	max-height: 610px;
+	padding: 15px 0;
 }
 
 .link {
@@ -335,20 +406,10 @@ section {
 	cursor: pointer;
 }
 
-.photos {
-	position: fixed;
-	z-index: -999;
-}
-
 /* #portrait:hover {
 	display: block;
 } */
 
-#claudy_photo:hover{
-	display: block;
-}
-
-#portrait {
-	position: absolute;
-	z-index: -1;
+.about-page {
+  font-size: 1.5em;
 }
