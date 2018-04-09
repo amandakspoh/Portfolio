@@ -23,11 +23,6 @@
     border-bottom: 3.5px dotted;
   }
 
-/* ABOUT PAGE */
-  .title-page {
-    font-size: 1.5em;
-  }
-
 /* PROJECT PAGE */
   .main-nav {
     padding-top: 0;
@@ -74,11 +69,6 @@
     border-bottom: 3.5px dotted;
   }
 
-/* ABOUT PAGE */
-  .title-page {
-    font-size: 1.5em;
-  }
-
 /* PROJECT PAGE */
   .main-nav {
     padding-top: 0;
@@ -99,8 +89,39 @@
   }
 }
 
-/* DESKTOP
+/* ABOUT PAGE
 ===========================================================================*/
-@media (min-width: 769px) and (max-width: 1288px) {
+@media (min-width: 1024px) and (max-width: 1250px) {
+  .about-page {
+    font-size: 1.25em;
+  }
 
+  .container .col2 {
+    padding-top: 0.6em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-page {
+    font-size: 1em;
+  }
+
+  .container .col2 {
+    padding-top: 0.7em;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .about-page {
+    font-size: 1em;
+  }
+
+  .container .col2 {
+    width: 100%;
+  }
+
+  .col2-imgs {
+    display: none;
+    visibility: hidden;
+  }
 }
